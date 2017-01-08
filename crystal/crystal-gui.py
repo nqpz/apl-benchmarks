@@ -27,9 +27,9 @@ def showText(what, where):
 def render(t):
     frame_start = time.time()
     frame = crystal_frame(numpy.array([field_size]),
-                          numpy.array([scale]),
+                          numpy.array([scale]).astype('float32'),
                           numpy.array([degree]),
-                          numpy.array([t])).get()
+                          numpy.array([t]).astype('float32')).get()
     frame = frame.reshape((field_size, field_size))
     frame_end = time.time()
     pygame.surfarray.blit_array(surface, frame)

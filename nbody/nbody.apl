@@ -10,7 +10,7 @@ yps ← ReadCSVDouble 'yps.txt'
 xvs ← ReadCSVDouble 'xvs.txt'
 yvs ← ReadCSVDouble 'yvs.txt'
 
-⍝ Code.
+⍝ Code.  Some of this is a bit non-apl-y for it to work with tail2fthark.
 indices ← ⍳(⍴ xps)[1]
 
 move ← {
@@ -30,6 +30,7 @@ move ← {
   p1,v1
 }
 
+⍝ This 'write' is pretty slow.
 write ← {
   indices ← ⍵[1]
   size ← ⍵[2]

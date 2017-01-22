@@ -2,3 +2,6 @@ nbody.tail
 nbody.fut
 nbody.py
 nbody
+bench.bin
+bench.c
+/data

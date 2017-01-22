@@ -2,3 +2,5 @@ crystal.tail
 crystal.fut
 crystal.py
 crystal
+bench.bin
+bench.c

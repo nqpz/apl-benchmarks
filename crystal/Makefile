@@ -14,7 +14,7 @@ crystal.tail: crystal.apl
 	aplt -p_types -s_tail -c -o crystal.tail $(TAIL_PRELUDE) crystal.apl
 
 clean:
-	rm -f crystal.tail crystal.fut crystal.py
+	rm -f crystal.tail crystal.fut crystal.py crystal.pyc
 
 run: crystal.py
 	./crystal-gui.py
